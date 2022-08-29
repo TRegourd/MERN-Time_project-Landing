@@ -3,9 +3,7 @@ import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import Seo from "../components/Seo";
 import IndexHero from "../components/IndexHero";
-import IndexAbout from "../components/IndexAbout";
 import IndexServices from "../components/IndexServices";
-import IndexPortfolio from "../components/IndexPortfolio";
 import IndexTestimonials from "../components/IndexTestimonials";
 import IndexContact from "../components/IndexContact";
 import IndexProcess from "../components/IndexProcess";
@@ -39,12 +37,10 @@ export default function index({ data }: any) {
     <Layout navLight={false}>
       <Seo seo={seo} lang={data.locales.edges[0].node.language} />
       <IndexHero title={title} subtitle={subtitle} img={header_image} />
-      <IndexAbout />
       <section className="relative py-16 md:py-24" id="features">
         <IndexServices />
         <IndexProcess />
       </section>
-      <IndexPortfolio />
       <IndexTestimonials list={testimonialsList} />
       <IndexContact />
     </Layout>

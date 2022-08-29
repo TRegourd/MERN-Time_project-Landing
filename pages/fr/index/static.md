@@ -1,7 +1,7 @@
 ---
 slug: "index/static"
 lang: "fr"
-title: "Ridge Coding"
-subtitle: "Votre Partenaire Developpement Web"
+title: "The Time Machine"
+subtitle: "Votre temps est précieux"
 header_img: "index-header-bg"
 ---

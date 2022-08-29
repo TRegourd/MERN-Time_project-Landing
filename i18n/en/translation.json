@@ -10,7 +10,8 @@
     "contact": "Contact us",
     "suscribe": "Suscribe",
     "send_message": "Send Message",
-    "learn_more": "Learn More"
+    "learn_more": "Learn More",
+    "launch": "Launch App"
   },
 
   "CONTACT": {
@@ -20,13 +21,13 @@
     "message": "Your Message",
     "section": "Contact Us",
     "title": "Get In Touch",
-    "subtitle": "A question ? A project ? A mission ? Feel free to contact us !"
+    "subtitle": "A question ? A project ? Feel free to contact us !"
   },
 
   "TESTIMONIALS": {
     "section": "Testimonial",
-    "title": "Client's Review",
-    "subtitle": "What our customers say about us.",
+    "title": "User's Review",
+    "subtitle": "What our users say about us.",
     "testimonials": [
       {
         "name": "John Doe",
@@ -53,11 +54,5 @@
         "avatar": "paul-smith"
       }
     ]
-  },
-
-  "PORTFOLIO": {
-    "section": "Portfolio",
-    "title": "Our Works & Projects",
-    "subtitle": "The latest project in our portfolio"
   }
 }

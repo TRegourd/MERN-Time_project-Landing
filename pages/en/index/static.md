@@ -1,7 +1,7 @@
 ---
 slug: "index/static"
 lang: "en"
-title: "Ridge Coding"
-subtitle: "You Web Development Partner"
+title: "The Time Machine"
+subtitle: "Keep track of your time"
 header_img: "index-header-bg"
 ---

@@ -15,12 +15,12 @@ function Footer() {
   return (
     <footer className="bg-slate-800  dark:bg-gray-900">
       <div className="container">
-        <div className="grid items-center md:grid-cols-12">
+        <div className=" grid items-center py-2 md:grid-cols-12">
           <div className="md:col-span-3">
-            <a href="#" className="logo-footer">
+            <a href="#" className="logo-footer ">
               <img
-                src="/assets/logos/ridge-full-light.png"
-                className="mx-auto w-44 md:ml-0"
+                src="/assets/logos/time-machine.png"
+                className="mx-auto w-10 md:ml-0"
                 alt=""
               />
             </a>

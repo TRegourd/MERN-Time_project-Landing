@@ -3,10 +3,10 @@ import { Helmet } from "react-helmet";
 
 const Seo = ({ seo = {}, lang }: any) => {
   const { siteName, defaultSeo, favicon } = {
-    siteName: "Ridge Coding",
+    siteName: "Time Project Landing",
     defaultSeo: {
-      metaTitle: "Ridge Coding",
-      metaDescription: "Developpement de Site et d'applications Web",
+      metaTitle: "Time Project Landing",
+      metaDescription: "Keep track of your time",
       shareImage: { localFile: { url: "" } },
     },
     favicon: { localFile: { url: "/assets/logos/ridge-icon.png" } },

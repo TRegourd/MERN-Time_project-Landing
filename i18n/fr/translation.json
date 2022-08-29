@@ -9,7 +9,8 @@
     "contact": "Contactez nous",
     "suscribe": "S'inscrire",
     "send_message": "Envoyer",
-    "learn_more": "En savoir plus"
+    "learn_more": "En savoir plus",
+    "launch": "Lancer l'application"
   },
 
   "CONTACT": {
@@ -19,13 +20,13 @@
     "message": "Votre Message",
     "section": "Contact",
     "title": "Nous contacter",
-    "subtitle": "Une question ? Un projet ? Une mission ? N'hesitez pas à nous contacter !"
+    "subtitle": "Une question ? Un projet ? N'hesitez pas à nous contacter !"
   },
 
   "TESTIMONIALS": {
     "section": "Avis",
-    "title": "Avis Clients",
-    "subtitle": "Ce que nos clients disent de nous.",
+    "title": "Avis Utilisateurs",
+    "subtitle": "Ce que nos utilisateurs disent de nous.",
     "testimonials": [
       {
         "name": "John Doe",
@@ -52,11 +53,5 @@
         "avatar": "paul-smith"
       }
     ]
-  },
-
-  "PORTFOLIO": {
-    "section": "Portfolio",
-    "title": "Nos projets et réalisations",
-    "subtitle": "Les derniers projets developpés pour nos clients."
   }
 }

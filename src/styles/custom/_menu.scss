@@ -8,7 +8,7 @@
     .navbar-nav {
       @apply mt-4 flex h-24 flex-row overflow-y-scroll;
       .nav-link {
-        @apply block p-3 text-black hover:text-primary-600 dark:text-white/60 dark:hover:text-white;
+        @apply block p-3  text-white/60 hover:text-primary-600 dark:hover:text-white;
       }
       .active {
         .nav-link {
@@ -108,7 +108,7 @@
       @apply py-3;
       .navbar-nav {
         .nav-link {
-          @apply text-black;
+          @apply text-black dark:text-white/60;
         }
         .active {
           .nav-link {

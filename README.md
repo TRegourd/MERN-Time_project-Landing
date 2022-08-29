@@ -1,3 +1,3 @@
-# Ridge Coding Web
+# Time Project Landing
 
-Ce repository contient les fichiers du site web Ridge Coding, built with Gatsby.
+Ce repository contient les fichiers de la landing page Time Project, built with Gatsby.

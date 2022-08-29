@@ -15,40 +15,42 @@ function IndexHero({
 
   const image = getImage(img);
   return (
-    <section
-      className="relative flex items-center bg-primary-50 py-36 dark:bg-primary-600/10 md:h-auto md:py-0"
-      id="home"
-    >
-      <div className="container relative">
-        <div className="mt-0 grid grid-cols-1 pb-5 pt-0 text-center md:mt-12 md:pt-12">
-          <div className="mt-28">
-            <div>
-              <h4 className="position-relative mb-7 text-4xl font-medium leading-normal dark:text-white lg:text-5xl lg:leading-normal">
-                <img src="/assets/logos/ridge-text.png" className="w-full" />
-              </h4>
+    <>
+      <section
+        className="relative table w-full py-36 lg:py-64"
+        //  style={{background: url('assets/images/bg/1.jpg')"; center"}}
+        id="home"
+      >
+        {image && (
+          <GatsbyImage
+            className="absolute top-0 h-full w-full"
+            image={image}
+            alt="ridgecoding-header"
+          />
+        )}
+        <div className="absolute inset-0 bg-black opacity-80"></div>
+        <div className="container relative">
+          <div className="mt-12 grid grid-cols-1">
+            <h4 className="position-relative mb-7 text-4xl font-medium leading-normal text-white lg:text-5xl lg:leading-normal">
+              {title}
+            </h4>
 
-              <p className="mx-auto mb-0 max-w-2xl text-lg text-slate-600 opacity-50 dark:text-white/70">
-                {subtitle}
-              </p>
+            <p className="mb-0 max-w-2xl text-lg text-white opacity-50">
+              {subtitle}
+            </p>
 
-              <div className="relative mt-10">
-                <a href="#contact" className="btn btn-primary rounded-md">
-                  <Trans>BUTTON.contact</Trans>
-                </a>
-              </div>
+            <div className="relative mt-10">
+              <a
+                href="http://localhost:3000/"
+                className="btn btn-primary rounded-md"
+              >
+                <Trans>BUTTON.launch</Trans>
+              </a>
             </div>
-
-            {image && (
-              <GatsbyImage
-                className="relative mt-16"
-                image={image}
-                alt="ridgecoding-header"
-              />
-            )}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 

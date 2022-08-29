@@ -2,10 +2,10 @@
   "name": "RidgeCoding-web",
   "version": "1.0.5",
   "private": true,
-  "description": "Ridge Coding WebSite",
+  "description": "Time Project Landing",
   "author": "Ridge Coding",
   "keywords": [
-    "Ridge Coding"
+    "Time Project Landing"
   ],
   "scripts": {
     "develop": "gatsby develop",

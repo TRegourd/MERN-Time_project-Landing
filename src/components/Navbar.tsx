@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Trans } from "react-i18next";
 import { contactDetails } from "../libs/contactDetails";
 
 function Navbar() {
@@ -71,12 +72,12 @@ function Navbar() {
       <div className="container flex flex-wrap items-center justify-end">
         <a className="navbar-brand" href="">
           <img
-            src="/assets/logos/ridge-icon.png"
+            src="/assets/logos/time-machine.png"
             className="logo-light-mode w-20"
             alt=""
           />
           <img
-            src="/assets/logos/ridge-icon.png"
+            src="/assets/logos/time-machine.png"
             className="logo-dark-mode w-20"
             alt=""
           />
@@ -84,6 +85,14 @@ function Navbar() {
 
         <div className="nav-icons ml-auto flex items-center lg_992:order-2">
           <ul className="menu-social ps-lg-4 ms-2 mb-0 list-none">
+            <li className="mr-2 inline">
+              <a
+                href="http://localhost:3000/"
+                className="btn btn-primary rounded-md"
+              >
+                <Trans>BUTTON.launch</Trans>
+              </a>
+            </li>
             <li className="inline">
               <a
                 href={contactDetails.linkedin}
@@ -130,25 +139,11 @@ function Navbar() {
         >
           <ul className="navbar-nav" id="navbar-navlist">
             <li className="nav-item">
-              <a className="nav-link active" href="#home">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#about">
-                About us
-              </a>
-            </li>
-            <li className="nav-item">
               <a className="nav-link" href="#features">
-                Services
+                About
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#portfolio">
-                Portfolio
-              </a>
-            </li>
+
             <li className="nav-item">
               <a className="nav-link" href="#contact">
                 Contact us
