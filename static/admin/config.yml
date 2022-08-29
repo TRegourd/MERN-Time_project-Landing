@@ -8,10 +8,17 @@ collections:
   - label: "Page Content English"
     name: "en"
     files:
-      - label: "Index"
-        name: "index"
-        file: "pages/en/index.md"
+      - label: "Header"
+        name: "header"
+        file: "pages/en/header.md"
         fields:
+          - {
+              label: Language,
+              name: lang,
+              widget: "select",
+              options: ["en"],
+              required: true,
+            }
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
           - { label: Header Background, name: header_img, widget: image }
@@ -79,10 +86,17 @@ collections:
   - label: "Contenu de la page en Français"
     name: "fr"
     files:
-      - label: "Index"
-        name: "index"
-        file: "pages/fr/index.md"
+      - label: "Header"
+        name: "header"
+        file: "pages/fr/header.md"
         fields:
+          - {
+              label: Language,
+              name: lang,
+              widget: "select",
+              options: ["fr"],
+              required: true,
+            }
           - { label: Titre, name: title, widget: string }
           - { label: Sous Titre, name: subtitle, widget: string }
           - { label: Header Background, name: header_img, widget: image }

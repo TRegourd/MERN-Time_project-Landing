@@ -16,11 +16,7 @@ function IndexHero({
   const image = getImage(img);
   return (
     <>
-      <section
-        className="relative table w-full py-36 lg:py-64"
-        //  style={{background: url('assets/images/bg/1.jpg')"; center"}}
-        id="home"
-      >
+      <section className="relative table w-full py-36 lg:py-64" id="home">
         {image && (
           <GatsbyImage
             className="absolute top-0 h-full w-full"
