@@ -18,7 +18,7 @@ export default function index({ data }: any) {
   const seo = {};
 
   const header_image = data.staticImg.nodes.find((el: any) => {
-    return el.name == header_img;
+    return `/${el.relativePath}` == header_img;
   })?.childrenImageSharp[0];
 
   const rawTestimonialsList: ITestimonial[] = t("TESTIMONIALS.testimonials", {
@@ -61,12 +61,11 @@ export const query = graphql`
       }
     }
     header: markdownRemark(
-      frontmatter: { slug: { eq: "index/static" }, lang: { eq: $language } }
+      fields: { slug: { glob: "/*/header" } }
+      frontmatter: { lang: { eq: $language } }
     ) {
       id
       frontmatter {
-        lang
-        slug
         title
         subtitle
         header_img
@@ -75,11 +74,11 @@ export const query = graphql`
     staticImg: allFile(
       filter: {
         extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
-        relativePath: { glob: "assets/index/*" }
       }
     ) {
       nodes {
         name
+        relativePath
         childrenImageSharp {
           gatsbyImageData
         }
