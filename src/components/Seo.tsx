@@ -9,7 +9,7 @@ const Seo = ({ seo = {}, lang }: any) => {
       metaDescription: "Keep track of your time",
       shareImage: { localFile: { url: "" } },
     },
-    favicon: { localFile: { url: "/assets/logos/ridge-icon.png" } },
+    favicon: { localFile: { url: "/assets/logos/time-machine.png" } },
   };
 
   // Merge default and page-specific SEO values

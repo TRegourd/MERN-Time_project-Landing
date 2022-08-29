@@ -24,7 +24,7 @@ function IndexFAQ() {
             <Trans>FAQ.subtitle</Trans>
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-[30px] md:grid-cols-12">
+        <div className="grid grid-cols-1 gap-[30px] dark:text-white md:grid-cols-12">
           <div className="md:col-span-5 lg:col-span-4">
             <div className="sticky top-20 rounded-md p-6 shadow dark:shadow-gray-700">
               <ul
