@@ -1,0 +1,148 @@
+/*********************************/
+/*             Helper            */
+/*===============================*/
+.container,
+.contacinr-fluid {
+  @apply relative;
+}
+
+.text-type-element {
+  @apply z-2 after:absolute after:right-0 after:bottom-0 after:left-0 after:z-0 after:h-1 after:w-auto after:rounded-md after:bg-primary-300 after:transition-all after:duration-300 after:ease-in-out after:content-[''];
+}
+
+/*****************/
+/* Tobii Lighbox */
+/*****************/
+.tobii__btn svg {
+  height: theme("height.5");
+  width: auto;
+}
+
+.tobii__counter {
+  font-size: theme("fontSize.base");
+}
+
+.tobii-zoom {
+  display: block;
+}
+
+.tobii-zoom__icon {
+  display: none;
+}
+
+#grid {
+  padding: theme("spacing.0");
+}
+
+/*****************/
+/*  Timeline     */
+/*****************/
+.timeline {
+  @apply after:absolute after:top-0 after:right-0 after:left-0 after:m-auto after:h-full after:w-px after:border-l-2 after:border-dashed after:border-gray-200 after:content-[''] dark:after:border-gray-600;
+  .timeline-item {
+    .date-label-left,
+    .duration-right {
+      @apply before:absolute before:top-0 before:z-10 before:h-7 before:w-7 before:rounded-full before:border-2 before:border-dashed before:border-gray-200 before:bg-white before:content-[''] after:absolute after:top-[9px] after:z-10 after:h-2.5 after:w-2.5 after:rounded-full after:bg-primary-600 after:content-[''] dark:before:border-gray-600 dark:before:bg-black;
+    }
+    .date-label-left {
+      @apply float-right mr-6 before:-right-[43px] after:-right-[34px];
+    }
+    .duration-right {
+      @apply float-left mr-6 before:-left-[43px] after:-left-[34px];
+    }
+    .event {
+      &.event-description-right {
+        @apply ml-6 text-left;
+      }
+      &.event-description-left {
+        @apply mr-6 text-right;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .timeline {
+    @apply ml-3 after:m-0 after:-ml-[7px];
+    .timeline-item {
+      .event {
+        &.event-description-right,
+        &.event-description-left {
+          @apply m-0 ml-6 text-left;
+        }
+      }
+      .duration {
+        @apply float-left ml-6 mr-auto text-left before:-left-11 after:-left-9;
+        .event {
+          @apply ml-[15px] text-left;
+        }
+      }
+    }
+  }
+}
+
+/*****************/
+/* Subscribe Form */
+/*****************/
+.subcribe-form {
+  form {
+    @apply max-w-xl;
+    input {
+      @apply h-11 w-full py-4 pr-40 pl-8 text-dark outline-none;
+    }
+
+    .btn {
+      @apply absolute top-0 right-0 h-11;
+    }
+  }
+}
+
+/*****************/
+/*    Shapes     */
+/*****************/
+/* Shapes */
+.shape {
+  @apply absolute right-0 -bottom-px left-0;
+  & > svg {
+    @apply h-auto w-full;
+    transform: scale(2);
+    transform-origin: theme("transformOrigin.top")
+      theme("transformOrigin.center");
+  }
+}
+
+/*****************/
+/*  back-to-top  */
+/*****************/
+.back-to-top {
+  @apply hidden;
+}
+
+/*****************/
+/*  Testimonial  */
+/*****************/
+.tns-controls {
+  button[data-controls="prev"],
+  button[data-controls="next"] {
+    @apply absolute top-1/2 z-1 h-8 w-8 -translate-y-1/2 rounded-full border-none bg-white text-base text-dark shadow-lg shadow-slate-200 dark:bg-black dark:text-white dark:shadow-slate-700;
+    &:hover {
+      @apply bg-primary-600 text-white;
+    }
+  }
+  button[data-controls="prev"] {
+    @apply left-0 md:-left-2;
+  }
+  button[data-controls="next"] {
+    @apply right-0 md:-right-2;
+  }
+}
+
+/*****************/
+/*  Bg Video Hero  */
+/*****************/
+.bg-video-wrapper {
+  @apply pointer-events-none absolute top-0 left-0 z-0 h-full w-full overflow-hidden;
+  iframe {
+    @apply absolute top-1/2 left-1/2 h-[56.25vw] min-h-screen w-screen min-w-[177.77vw] -translate-x-1/2 -translate-y-1/2;
+  }
+}

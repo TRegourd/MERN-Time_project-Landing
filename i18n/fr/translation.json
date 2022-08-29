@@ -1,0 +1,62 @@
+{
+  "NAV": {
+    "about": "A propos",
+    "home": "Accueil",
+    "contact": "Contact",
+    "lang": "FR"
+  },
+  "BUTTON": {
+    "contact": "Contactez nous",
+    "suscribe": "S'inscrire",
+    "send_message": "Envoyer",
+    "learn_more": "En savoir plus"
+  },
+
+  "CONTACT": {
+    "email": "Email",
+    "phone": "Téléphone",
+    "name": "Votre Nom",
+    "message": "Votre Message",
+    "section": "Contact",
+    "title": "Nous contacter",
+    "subtitle": "Une question ? Un projet ? Une mission ? N'hesitez pas à nous contacter !"
+  },
+
+  "TESTIMONIALS": {
+    "section": "Avis",
+    "title": "Avis Clients",
+    "subtitle": "Ce que nos clients disent de nous.",
+    "testimonials": [
+      {
+        "name": "John Doe",
+        "position": "Doctor",
+        "text": "Lorem ipsum dolor sit amet, consectet",
+        "avatar": "john-doe"
+      },
+      {
+        "name": "Fred Foo",
+        "position": "Doctor",
+        "text": "Lorem ipsum dolor sit amet, consectet",
+        "avatar": "fred-foo"
+      },
+      {
+        "name": "Jane Doe",
+        "position": "Doctor",
+        "text": "Lorem ipsum dolor sit amet, consectet",
+        "avatar": "jane-doe"
+      },
+      {
+        "name": "Paul Smith",
+        "position": "Doctor",
+        "text": "Lorem ipsum dolor sit amet, consectet",
+        "avatar": "paul-smith"
+      }
+    ]
+  },
+
+  "PORTFOLIO": {
+    "section": "Portfolio",
+    "title": "Nos projets et réalisations",
+    "subtitle": "Les derniers projets developpés pour nos clients."
+  }
+}
