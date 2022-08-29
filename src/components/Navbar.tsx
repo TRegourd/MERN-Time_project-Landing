@@ -70,7 +70,7 @@ function Navbar() {
   return (
     <nav className="navbar" id="navbar">
       <div className="container flex flex-wrap items-center justify-end">
-        <a className="navbar-brand" href="">
+        <a className="navbar-brand" href="/">
           <img
             src="/assets/logos/time-machine.png"
             className="logo-light-mode w-20"
@@ -141,6 +141,12 @@ function Navbar() {
             <li className="nav-item">
               <a className="nav-link" href="#features">
                 About
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="#faq">
+                FAQ
               </a>
             </li>
 

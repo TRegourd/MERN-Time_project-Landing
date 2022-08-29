@@ -54,5 +54,11 @@
         "avatar": "paul-smith"
       }
     ]
+  },
+
+  "FAQ": {
+    "section": "FAQ",
+    "title": "Frequently asked questions",
+    "subtitle": "This section might help you, if not please contact us !"
   }
 }

@@ -9,6 +9,7 @@ import IndexContact from "../components/IndexContact";
 import IndexProcess from "../components/IndexProcess";
 import { useTranslation } from "react-i18next";
 import { ITestimonial } from "../libs/interfaces";
+import IndexFAQ from "../components/IndexFAQ";
 
 export default function index({ data }: any) {
   const { t } = useTranslation();
@@ -34,7 +35,7 @@ export default function index({ data }: any) {
   ];
 
   return (
-    <Layout navLight={false}>
+    <Layout>
       <Seo seo={seo} lang={data.locales.edges[0].node.language} />
       <IndexHero title={title} subtitle={subtitle} img={header_image} />
       <section className="relative py-16 md:py-24" id="features">
@@ -42,6 +43,7 @@ export default function index({ data }: any) {
         <IndexProcess />
       </section>
       <IndexTestimonials list={testimonialsList} />
+      <IndexFAQ />
       <IndexContact />
     </Layout>
   );
