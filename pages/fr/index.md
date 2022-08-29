@@ -1,5 +1,5 @@
 ---
 title: The Time Machine
-subtitle: Votre temps est précieuxx
+subtitle: Votre temps est précieux
 header_img: /assets/index-header-bg.jpeg
 ---
