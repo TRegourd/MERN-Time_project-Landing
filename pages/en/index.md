@@ -1,5 +1,5 @@
 ---
-title: The Time Machine
+title: Time Machine
 subtitle: Keep track of your time
 header_img: /assets/index-header-bg.jpeg
 ---
