@@ -22,6 +22,7 @@ module.exports = {
     `gatsby-plugin-minify`,
     `gatsby-plugin-sass`,
     "gatsby-plugin-slug",
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-typescript`,
       options: {
