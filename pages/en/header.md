@@ -1,6 +1,6 @@
 ---
 lang: en
-title: The Time Machine
+title: My Time Machine
 subtitle: Keep track of your time
-header_img: /assets/index-header-bg.jpeg
+header_img: /assets/fred-foo.jpeg
 ---
