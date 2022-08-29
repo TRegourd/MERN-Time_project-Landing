@@ -5,31 +5,144 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: "Page Content English"
+    name: "en"
     files:
-      - label: "About Page"
-        name: "about"
-        file: "site/content/about.yml"
+      - label: "Index"
+        name: "index"
+        file: "pages/en/index.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
-          - label: Team
-            name: team
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: Header Background, name: header_img, widget: image }
+      - label: "Features"
+        name: "features"
+        file: "pages/en/features.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - label: Features
+            name: features
             widget: list
             fields:
-              - { label: Name, name: name, widget: string }
+              - { label: Feature Name, name: name, widget: string }
+              - { label: Description, name: position, widget: string }
+              - { label: Logo, name: image, widget: image }
+      - label: "Process"
+        name: "process"
+        file: "pages/en/process.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - label: Steps
+            name: steps
+            widget: list
+            fields:
+              - { label: Step Name, name: name, widget: string }
+              - { label: Description, name: position, widget: string }
+              - { label: Image, name: image, widget: image }
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "pages/en/testimonials.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              - { label: User Name, name: name, widget: string }
               - { label: Position, name: position, widget: string }
-              - { label: Photo, name: photo, widget: image }
-      - label: "Locations Page"
-        name: "locations"
-        file: "site/content/locations.yml"
+              - { label: Text, name: text, widget: string }
+              - { label: Photo, name: image, widget: image }
+      - label: "FAQ"
+        name: "faq"
+        file: "pages/en/faq.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
-          - label: Locations
-            name: locations
+          - { label: Subtitle, name: subtitle, widget: string }
+          - label: Question
+            name: questions
             widget: list
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Address, name: address, widget: string }
+              - { label: Title, name: name, widget: string }
+              - { label: Text, name: text, widget: markdown }
+      - label: "Contact"
+        name: "contact"
+        file: "pages/en/contact.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Email, name: email, widget: string }
+
+  - label: "Contenu de la page en Français"
+    name: "fr"
+    files:
+      - label: "Index"
+        name: "index"
+        file: "pages/fr/index.md"
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Sous Titre, name: subtitle, widget: string }
+          - { label: Header Background, name: header_img, widget: image }
+      - label: "Fonctionnalités"
+        name: "features"
+        file: "pages/fr/features.md"
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Sous Titre, name: subtitle, widget: string }
+          - label: Fonctionnalités
+            name: features
+            widget: list
+            fields:
+              - { label: Nom de la fonctionnalité, name: name, widget: string }
+              - { label: Description, name: position, widget: string }
+              - { label: Logo, name: image, widget: image }
+      - label: "Processus"
+        name: "process"
+        file: "pages/fr/process.md"
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Sous Titre, name: subtitle, widget: string }
+          - label: Etapes
+            name: steps
+            widget: list
+            fields:
+              - { label: Nom de l'étape, name: name, widget: string }
+              - { label: Description, name: position, widget: string }
+              - { label: Image, name: image, widget: image }
+      - label: "Avis"
+        name: "testimonials"
+        file: "pages/fr/testimonials.md"
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Sous Titre, name: subtitle, widget: string }
+          - label: Avis
+            name: testimonials
+            widget: list
+            fields:
+              - { label: Utilisateur, name: name, widget: string }
+              - { label: Poste, name: position, widget: string }
+              - { label: Texte, name: text, widget: string }
+              - { label: Photo, name: image, widget: image }
+      - label: "FAQ"
+        name: "faq"
+        file: "pages/fr/faq.md"
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Sous Titre, name: subtitle, widget: string }
+          - label: Questions
+            name: questions
+            widget: list
+            fields:
+              - { label: Titre, name: name, widget: string }
+              - { label: Texte, name: text, widget: markdown }
+      - label: "Contact"
+        name: "contact"
+        file: "pages/fr/contact.md"
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Sous Titre, name: subtitle, widget: string }
+          - { label: Téléphone, name: phone, widget: string }
+          - { label: Email, name: email, widget: string }
