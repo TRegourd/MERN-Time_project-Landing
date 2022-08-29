@@ -13,7 +13,15 @@ import IndexFAQ from "../components/IndexFAQ";
 
 export default function index({ data }: any) {
   const { t } = useTranslation();
-  const { title, subtitle, header_img } = data.header.frontmatter;
+
+  const header_title = data.header.frontmatter.title;
+  const header_subtitle = data.header.frontmatter.subtitle;
+  const header_img = data.header.frontmatter.header_img;
+
+  const contact_title = data.contact.frontmatter.title;
+  const contact_subtitle = data.contact.frontmatter.subtitle;
+  const contact_phone = data.contact.frontmatter.phone;
+  const contact_email = data.contact.frontmatter.email;
 
   const seo = {};
 
@@ -37,14 +45,23 @@ export default function index({ data }: any) {
   return (
     <Layout>
       <Seo seo={seo} lang={data.locales.edges[0].node.language} />
-      <IndexHero title={title} subtitle={subtitle} img={header_image} />
+      <IndexHero
+        title={header_title}
+        subtitle={header_subtitle}
+        img={header_image}
+      />
       <section className="relative py-16 md:py-24" id="features">
         <IndexServices />
         <IndexProcess />
       </section>
       <IndexTestimonials list={testimonialsList} />
       <IndexFAQ />
-      <IndexContact />
+      <IndexContact
+        title={contact_title}
+        subtitle={contact_subtitle}
+        email={contact_email}
+        phone={contact_phone}
+      />
     </Layout>
   );
 }
@@ -69,6 +86,18 @@ export const query = graphql`
         title
         subtitle
         header_img
+      }
+    }
+    contact: markdownRemark(
+      fields: { slug: { glob: "/*/contact" } }
+      frontmatter: { lang: { eq: $language } }
+    ) {
+      id
+      frontmatter {
+        title
+        subtitle
+        phone
+        email
       }
     }
     staticImg: allFile(

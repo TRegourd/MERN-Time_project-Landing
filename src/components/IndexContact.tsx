@@ -1,8 +1,17 @@
 import React from "react";
 import { Trans, useTranslation } from "react-i18next";
-import { contactDetails } from "../libs/contactDetails";
 
-function IndexContact() {
+function IndexContact({
+  title,
+  subtitle,
+  email,
+  phone,
+}: {
+  title: string;
+  subtitle: string;
+  email: string;
+  phone: string;
+}) {
   const { t } = useTranslation();
 
   return (
@@ -16,11 +25,11 @@ function IndexContact() {
             <Trans>CONTACT.section</Trans>
           </h6>
           <h3 className="mb-4 text-xl font-medium dark:text-white md:text-2xl">
-            <Trans>CONTACT.title</Trans>
+            {title}
           </h3>
 
           <p className="mx-auto max-w-xl text-slate-400 dark:text-slate-300">
-            <Trans>CONTACT.subtitle</Trans>
+            {subtitle}
           </p>
         </div>
 
@@ -145,8 +154,8 @@ function IndexContact() {
                   <h5 className="mb-2 text-lg font-medium dark:text-white">
                     <Trans>CONTACT.phone</Trans>
                   </h5>
-                  <a href="tel:+33695025391" className="text-slate-400">
-                    {contactDetails.phone}
+                  <a href={`tel:${phone}`} className="text-slate-400">
+                    {phone}
                   </a>
                 </div>
               </div>
@@ -160,11 +169,8 @@ function IndexContact() {
                   <h5 className="mb-2 text-lg font-medium dark:text-white">
                     <Trans>CONTACT.email</Trans>
                   </h5>
-                  <a
-                    href={`mailto:${contactDetails.email}`}
-                    className="text-slate-400"
-                  >
-                    {contactDetails.email}
+                  <a href={`mailto:${email}`} className="text-slate-400">
+                    {email}
                   </a>
                 </div>
               </div>

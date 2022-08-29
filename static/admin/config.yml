@@ -26,6 +26,13 @@ collections:
         name: "features"
         file: "pages/en/features.md"
         fields:
+          - {
+              label: Language,
+              name: lang,
+              widget: "select",
+              options: ["en"],
+              required: true,
+            }
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
           - label: Features
@@ -39,6 +46,13 @@ collections:
         name: "process"
         file: "pages/en/process.md"
         fields:
+          - {
+              label: Language,
+              name: lang,
+              widget: "select",
+              options: ["en"],
+              required: true,
+            }
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
           - label: Steps
@@ -52,6 +66,13 @@ collections:
         name: "testimonials"
         file: "pages/en/testimonials.md"
         fields:
+          - {
+              label: Language,
+              name: lang,
+              widget: "select",
+              options: ["en"],
+              required: true,
+            }
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
           - label: Testimonials
@@ -66,6 +87,13 @@ collections:
         name: "faq"
         file: "pages/en/faq.md"
         fields:
+          - {
+              label: Language,
+              name: lang,
+              widget: "select",
+              options: ["en"],
+              required: true,
+            }
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
           - label: Question
@@ -78,6 +106,13 @@ collections:
         name: "contact"
         file: "pages/en/contact.md"
         fields:
+          - {
+              label: Language,
+              name: lang,
+              widget: "select",
+              options: ["en"],
+              required: true,
+            }
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
           - { label: Phone, name: phone, widget: string }
@@ -104,6 +139,13 @@ collections:
         name: "features"
         file: "pages/fr/features.md"
         fields:
+          - {
+              label: Language,
+              name: lang,
+              widget: "select",
+              options: ["fr"],
+              required: true,
+            }
           - { label: Titre, name: title, widget: string }
           - { label: Sous Titre, name: subtitle, widget: string }
           - label: Fonctionnalités
@@ -117,6 +159,13 @@ collections:
         name: "process"
         file: "pages/fr/process.md"
         fields:
+          - {
+              label: Language,
+              name: lang,
+              widget: "select",
+              options: ["fr"],
+              required: true,
+            }
           - { label: Titre, name: title, widget: string }
           - { label: Sous Titre, name: subtitle, widget: string }
           - label: Etapes
@@ -130,6 +179,13 @@ collections:
         name: "testimonials"
         file: "pages/fr/testimonials.md"
         fields:
+          - {
+              label: Language,
+              name: lang,
+              widget: "select",
+              options: ["fr"],
+              required: true,
+            }
           - { label: Titre, name: title, widget: string }
           - { label: Sous Titre, name: subtitle, widget: string }
           - label: Avis
@@ -144,6 +200,13 @@ collections:
         name: "faq"
         file: "pages/fr/faq.md"
         fields:
+          - {
+              label: Language,
+              name: lang,
+              widget: "select",
+              options: ["fr"],
+              required: true,
+            }
           - { label: Titre, name: title, widget: string }
           - { label: Sous Titre, name: subtitle, widget: string }
           - label: Questions
@@ -156,6 +219,13 @@ collections:
         name: "contact"
         file: "pages/fr/contact.md"
         fields:
+          - {
+              label: Language,
+              name: lang,
+              widget: "select",
+              options: ["fr"],
+              required: true,
+            }
           - { label: Titre, name: title, widget: string }
           - { label: Sous Titre, name: subtitle, widget: string }
           - { label: Téléphone, name: phone, widget: string }
