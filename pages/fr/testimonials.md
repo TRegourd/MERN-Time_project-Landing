@@ -11,4 +11,12 @@ testimonials:
     position: Utilisateur
     text: The Time Machine est génial
     image: /assets/john-doe.jpeg
+  - image: /assets/jane-doe.jpeg
+    name: Jane Doe
+    position: PDG
+    text: Le temps passe
+  - name: Paul Smith
+    position: Utilisateur
+    text: Le temps c'est de l'argent
+    image: /assets/paul-smith.jpeg
 ---
