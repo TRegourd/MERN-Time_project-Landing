@@ -9,4 +9,7 @@ features:
   - name: Reporting
     position: Visualisez vos statistiques ou celles de vos équipes en un coup d'oeil
     image: /assets/clipboard-data.svg
+  - name: Sécurité
+    position: Vos données sont stockées de manière sécurisée
+    image: /assets/incognito.svg
 ---
