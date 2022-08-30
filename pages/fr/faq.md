@@ -1,7 +1,7 @@
 ---
 lang: fr
 title: Foire aux questions
-subtitle: Cette section est làa pour vous aider. Si vous êtes coincés, contactez nous !
+subtitle: Cette section est là pour vous aider. Si vous êtes coincés, contactez nous !
 questions:
   - name: Comment créer un projet ?
     text: >-

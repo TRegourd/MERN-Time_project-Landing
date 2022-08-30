@@ -5,6 +5,7 @@ import {
   AccordionItemHeading,
   AccordionItemPanel,
 } from "react-accessible-accordion";
+import Markdown from "markdown-to-jsx";
 import { IQuestion } from "../libs/interfaces";
 
 function IndexFAQAccordionItem({ question }: { question: IQuestion }) {
@@ -47,7 +48,7 @@ function IndexFAQAccordionItem({ question }: { question: IQuestion }) {
           aria-labelledby="accordion-collapse-heading-2"
         >
           <div className="p-5">
-            <p className="text-slate-400 dark:text-gray-400">{question.text}</p>
+            <Markdown>{question.text}</Markdown>
           </div>
         </div>
       </AccordionItemPanel>
