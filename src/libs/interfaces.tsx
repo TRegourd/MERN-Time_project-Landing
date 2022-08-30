@@ -22,8 +22,8 @@ export interface IFeature {
 
 export interface ITestimonial {
   name: string;
-  avatar: string;
+  image: string;
   position: string;
   text: string;
-  image: IGatsbyImageData;
+  avatar: IGatsbyImageData;
 }

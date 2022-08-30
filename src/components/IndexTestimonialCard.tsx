@@ -3,7 +3,7 @@ import React from "react";
 import { ITestimonial } from "../libs/interfaces";
 
 function IndexTestimonialCard({ testimonial }: { testimonial: ITestimonial }) {
-  const image = getImage(testimonial.image);
+  const image = getImage(testimonial.avatar);
 
   return (
     <div key={testimonial.name} className="">

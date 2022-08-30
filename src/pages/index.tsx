@@ -27,20 +27,20 @@ export default function index({ data }: any) {
   const features_subtitle = data.features?.frontmatter.subtitle;
   const features_list = data.features?.frontmatter.features;
 
+  const testimonials_title = data.testimonials?.frontmatter.title;
+  const testimonials_subtitle = data.testimonials?.frontmatter.subtitle;
+  const testimonials_list = data.testimonials?.frontmatter.testimonials;
+
   const seo = {};
 
   const header_image = data.staticImg?.nodes.find((el: any) => {
     return `/${el.relativePath}` == header_img;
   })?.childrenImageSharp[0];
 
-  const rawTestimonialsList: ITestimonial[] = t("TESTIMONIALS.testimonials", {
-    returnObjects: true,
-  });
-
   const testimonialsList = [
-    ...rawTestimonialsList.map((item: any) => ({
-      image: data.testimonialsImg.nodes.find((el: any) => {
-        return item.avatar == el.name;
+    ...testimonials_list.map((item: any) => ({
+      avatar: data.testimonialsImg.nodes.find((el: any) => {
+        return item.image == `/${el.relativePath}`;
       })?.childrenImageSharp[0],
       ...item,
     })),
@@ -111,6 +111,22 @@ export const query = graphql`
         subtitle
       }
     }
+    testimonials: markdownRemark(
+      fields: { slug: { glob: "/*/testimonials" } }
+      frontmatter: { lang: { eq: $language } }
+    ) {
+      id
+      frontmatter {
+        title
+        subtitle
+        testimonials {
+          image
+          name
+          position
+          text
+        }
+      }
+    }
     contact: markdownRemark(
       fields: { slug: { glob: "/*/contact" } }
       frontmatter: { lang: { eq: $language } }
@@ -154,11 +170,12 @@ export const query = graphql`
     testimonialsImg: allFile(
       filter: {
         extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
-        relativePath: { glob: "assets/index/testimonials/*" }
+        relativePath: { glob: "assets/*" }
       }
     ) {
       nodes {
         name
+        relativePath
         childrenImageSharp {
           gatsbyImageData
         }
