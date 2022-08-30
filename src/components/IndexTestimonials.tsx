@@ -41,8 +41,6 @@ function IndexTestimonials({ list }: { list: ITestimonial[] }) {
     ],
   };
 
-  console.log(list);
-
   return (
     <section
       className="relative  bg-zinc-50 py-16 dark:bg-gray-800 md:py-24"
@@ -51,7 +49,7 @@ function IndexTestimonials({ list }: { list: ITestimonial[] }) {
       <div className="container">
         <div className="grid grid-cols-1 pb-8 text-center">
           <h6 className="mb-2 text-base font-medium uppercase text-primary-600">
-            <Trans>TESTIMONIALS.section</Trans>
+            <Trans>SECTION.testimonials</Trans>
           </h6>
           <h3 className="mb-4 text-xl font-medium dark:text-white md:text-2xl">
             <Trans>TESTIMONIALS.title</Trans>
