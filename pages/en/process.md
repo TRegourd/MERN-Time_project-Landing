@@ -1,7 +1,7 @@
 ---
 lang: en
 title: Start Using The Time Machine
-subtitle: "A few steps and you are ready to track your time ! "
+subtitle: "A few steps and you will be ready to track your time ! "
 steps:
   - name: Register
     description: Create a free secured account with basic informations, your time
