@@ -17,10 +17,10 @@ function Footer() {
       <div className="container">
         <div className=" grid items-center py-2 md:grid-cols-12">
           <div className="md:col-span-3">
-            <a href="#" className="logo-footer ">
+            <a href="#" className="logo-footer " aria-label="Logo Footer">
               <img
                 src="/assets/logos/time-machine.png"
-                className="mx-auto w-10 md:ml-0"
+                className="mx-auto h-full w-10 md:ml-0"
                 alt=""
               />
             </a>
@@ -41,6 +41,7 @@ function Footer() {
                 <a
                   href={contactDetails.linkedin}
                   className="btn btn-icon btn-sm rounded-md border border-slate-700 bg-slate-800 text-gray-400 hover:border-primary-600 hover:bg-primary-600 hover:text-white dark:border-slate-800 dark:bg-gray-900 dark:hover:bg-primary-600"
+                  aria-label="Linkedin"
                 >
                   <i className="mdi mdi-linkedin"></i>
                 </a>
@@ -49,6 +50,7 @@ function Footer() {
                 <a
                   href={contactDetails.gitHub}
                   className="btn btn-icon btn-sm rounded-md border border-slate-700 bg-slate-800 text-gray-400 hover:border-primary-600 hover:bg-primary-600 hover:text-white dark:border-slate-800 dark:bg-gray-900 dark:hover:bg-primary-600"
+                  aria-label="GitHub"
                 >
                   <i className="mdi mdi-github"></i>
                 </a>

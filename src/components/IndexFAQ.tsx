@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemButton,
-  AccordionItemPanel,
-} from "react-accessible-accordion";
+import { Accordion } from "react-accessible-accordion";
 import { Trans } from "react-i18next";
 import { IQuestion } from "../libs/interfaces";
 import IndexFAQAccordionItem from "./IndexFAQAccordionItem";

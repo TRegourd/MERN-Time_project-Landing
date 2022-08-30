@@ -131,6 +131,7 @@ function IndexContact({
                   <button
                     type="submit"
                     className="btn btn-primary flex h-11 items-center justify-center rounded-md"
+                    aria-label="Submit Form"
                   >
                     <Trans>BUTTON.send_message</Trans>
                   </button>

@@ -18,11 +18,9 @@ function IndexFAQAccordionItem({ question }: { question: IQuestion }) {
             id="accordion-collapse-heading-1"
           >
             <button
-              type="button"
               className="flex w-full items-center justify-between p-5 text-left font-medium"
               data-accordion-target="#accordion-collapse-body-1"
-              aria-expanded="true"
-              aria-controls="accordion-collapse-body-1"
+              aria-label="expand Accordion Button"
             >
               <span>{question.name}</span>
               <svg

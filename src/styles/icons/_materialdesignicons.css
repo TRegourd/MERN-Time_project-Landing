@@ -1,6 +1,7 @@
 /* MaterialDesignIcons.com */
 @font-face {
   font-family: "Material Design Icons";
+  font-display: swap;
   src: url("../fonts/materialdesignicons-webfont.eot?v=6.5.95");
   src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=6.5.95")
       format("embedded-opentype"),

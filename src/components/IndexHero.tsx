@@ -21,7 +21,7 @@ function IndexHero({
           <GatsbyImage
             className="absolute top-0 h-full w-full"
             image={image}
-            alt="ridgecoding-header"
+            alt="timeMachine-header"
           />
         )}
         <div className="absolute inset-0 bg-black opacity-80"></div>
@@ -37,6 +37,7 @@ function IndexHero({
               <a
                 href="http://localhost:3000/"
                 className="btn btn-primary rounded-md"
+                aria-label="Launch App"
               >
                 <Trans>BUTTON.launch</Trans>
               </a>

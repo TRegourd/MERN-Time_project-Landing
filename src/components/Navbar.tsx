@@ -70,15 +70,15 @@ function Navbar() {
   return (
     <nav className="navbar" id="navbar">
       <div className="container flex flex-wrap items-center justify-end">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="/" aria-label="Home">
           <img
             src="/assets/logos/time-machine.png"
-            className="logo-light-mode w-20"
+            className="logo-light-mode h-full w-20"
             alt=""
           />
           <img
             src="/assets/logos/time-machine.png"
-            className="logo-dark-mode w-20"
+            className="logo-dark-mode h-full w-20"
             alt=""
           />
         </a>
@@ -89,6 +89,7 @@ function Navbar() {
               <a
                 href="http://localhost:3000/"
                 className="btn btn-primary rounded-md"
+                aria-label="Launch app"
               >
                 <Trans>BUTTON.launch</Trans>
               </a>
@@ -97,6 +98,7 @@ function Navbar() {
               <a
                 href={contactDetails.linkedin}
                 className="btn btn-sm btn-icon btn-primary rounded-full"
+                aria-label="Linkedin"
               >
                 <i className="mdi mdi-linkedin"></i>
               </a>
@@ -105,12 +107,13 @@ function Navbar() {
               <a
                 href={contactDetails.gitHub}
                 className="btn btn-sm btn-icon btn-primary rounded-full"
+                aria-label="GitHub"
               >
                 <i className="mdi mdi-github"></i>
               </a>
             </li>
             <li className="inline" id="chk">
-              <button id="theme-mode">
+              <button id="theme-mode" aria-label="Theme Mode">
                 <span className="btn btn-sm btn-icon btn-slate inline-flex rounded-full dark:hidden">
                   <i className="mdi mdi-weather-sunny"></i>
                 </span>
@@ -127,6 +130,7 @@ function Navbar() {
             className="collapse-btn ml-3 inline-flex items-center text-dark dark:text-white lg_992:hidden"
             aria-controls="menu-collapse"
             aria-expanded="false"
+            aria-label="Menu Collapse"
           >
             <span className="sr-only">Navigation Menu</span>
             <i className="mdi mdi-menu mdi-24px"></i>
