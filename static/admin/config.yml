@@ -4,6 +4,7 @@ backend:
   branch: master
 media_folder: static/assets
 public_folder: /assets
+publish_mode: editorial_workflow
 collections:
   - label: "Page Content English"
     name: "en"
@@ -40,7 +41,7 @@ collections:
             widget: list
             fields:
               - { label: Feature Name, name: name, widget: string }
-              - { label: Description, name: position, widget: string }
+              - { label: Description, name: description, widget: string }
               - { label: Logo, name: image, widget: image }
       - label: "Process"
         name: "process"
@@ -60,8 +61,15 @@ collections:
             widget: list
             fields:
               - { label: Step Name, name: name, widget: string }
-              - { label: Description, name: position, widget: string }
+              - { label: Description, name: description, widget: string }
               - { label: Image, name: image, widget: image }
+              - {
+                  label: Position de l'image,
+                  name: position,
+                  widget: "select",
+                  options: ["left", "right"],
+                  required: true,
+                }
       - label: "Testimonials"
         name: "testimonials"
         file: "pages/en/testimonials.md"
@@ -102,6 +110,13 @@ collections:
             fields:
               - { label: Title, name: name, widget: string }
               - { label: Text, name: text, widget: markdown }
+              - {
+                  label: Category,
+                  name: category,
+                  widget: "select",
+                  options: ["General", "Support"],
+                  required: true,
+                }
       - label: "Contact"
         name: "contact"
         file: "pages/en/contact.md"
@@ -153,7 +168,7 @@ collections:
             widget: list
             fields:
               - { label: Nom de la fonctionnalité, name: name, widget: string }
-              - { label: Description, name: position, widget: string }
+              - { label: Description, name: description, widget: string }
               - { label: Logo, name: image, widget: image }
       - label: "Processus"
         name: "process"
@@ -173,8 +188,15 @@ collections:
             widget: list
             fields:
               - { label: Nom de l'étape, name: name, widget: string }
-              - { label: Description, name: position, widget: string }
+              - { label: Description, name: description, widget: string }
               - { label: Image, name: image, widget: image }
+              - {
+                  label: Position de l'image,
+                  name: position,
+                  widget: "select",
+                  options: ["left", "right"],
+                  required: true,
+                }
       - label: "Avis"
         name: "testimonials"
         file: "pages/fr/testimonials.md"
@@ -215,6 +237,13 @@ collections:
             fields:
               - { label: Titre, name: name, widget: string }
               - { label: Texte, name: text, widget: markdown }
+              - {
+                  label: Catégorie,
+                  name: category,
+                  widget: "select",
+                  options: ["General", "Support"],
+                  required: true,
+                }
       - label: "Contact"
         name: "contact"
         file: "pages/fr/contact.md"
