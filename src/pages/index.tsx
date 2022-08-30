@@ -35,6 +35,10 @@ export default function index({ data }: any) {
   const process_subtitle = data.process?.frontmatter.subtitle;
   const process_steps = data.process?.frontmatter.steps;
 
+  const faq_title = data.faq?.frontmatter.title;
+  const faq_subtitle = data.faq?.frontmatter.subtitle;
+  const faq_questions = data.faq?.frontmatter.questions;
+
   const seo = {};
 
   const header_image = data.staticImg?.nodes.find((el: any) => {
@@ -75,7 +79,11 @@ export default function index({ data }: any) {
         subtitle={testimonials_subtitle}
         list={testimonialsList}
       />
-      <IndexFAQ />
+      <IndexFAQ
+        title={faq_title}
+        subtitle={faq_subtitle}
+        questions={faq_questions}
+      />
       <IndexContact
         title={contact_title}
         subtitle={contact_subtitle}
@@ -152,6 +160,21 @@ export const query = graphql`
           name
           position
           description
+        }
+      }
+    }
+    faq: markdownRemark(
+      fields: { slug: { glob: "/*/faq" } }
+      frontmatter: { lang: { eq: $language } }
+    ) {
+      id
+      frontmatter {
+        title
+        subtitle
+        questions {
+          name
+          text
+          category
         }
       }
     }

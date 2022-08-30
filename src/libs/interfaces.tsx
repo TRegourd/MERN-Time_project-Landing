@@ -27,6 +27,12 @@ export interface IProcessStep {
   position: string;
 }
 
+export interface IQuestion {
+  title: string;
+  text: string;
+  category: string;
+}
+
 export interface ITestimonial {
   name: string;
   image: string;
