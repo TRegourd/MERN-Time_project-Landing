@@ -48,6 +48,7 @@ function IndexFAQAccordionItem({ question }: { question: IQuestion }) {
           aria-labelledby="accordion-collapse-heading-2"
         >
           <div className="p-5">
+            {/* TODO : Fix lists display  */}
             <Markdown>{question.text}</Markdown>
           </div>
         </div>
