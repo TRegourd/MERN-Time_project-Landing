@@ -20,7 +20,6 @@
     "phone": "Phone",
     "name": "Full Name",
     "message": "Your Message",
-    "section": "Contact Us",
     "title": "Get In Touch",
     "subtitle": "A question ? A project ? Feel free to contact us !"
   },
@@ -57,9 +56,9 @@
     ]
   },
 
-  "FAQ": {
-    "section": "FAQ",
-    "title": "Frequently asked questions",
-    "subtitle": "This section might help you, if not please contact us !"
+  "SECTION": {
+    "features": "Features",
+    "FAQ": "FAQ",
+    "contact": "Contact"
   }
 }

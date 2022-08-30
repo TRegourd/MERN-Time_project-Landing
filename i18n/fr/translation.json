@@ -60,5 +60,11 @@
     "section": "FAQ",
     "title": "Foire aux questions",
     "subtitle": "Cette section devrait pouvoir vous aider, si non : contactez nous ! !"
+  },
+
+  "SECTION": {
+    "features": "Fonctionnalités",
+    "FAQ": "FAQ",
+    "contact": "Contact"
   }
 }

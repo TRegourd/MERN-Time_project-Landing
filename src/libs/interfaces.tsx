@@ -15,9 +15,9 @@ export interface IContactDetails {
 }
 
 export interface IFeature {
-  title: string;
-  text: string;
-  logo: string;
+  name: string;
+  description: string;
+  image: string;
 }
 
 export interface ITestimonial {
