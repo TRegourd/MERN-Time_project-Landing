@@ -14,7 +14,7 @@ function IndexFAQ() {
       <div className="container">
         <div className="grid grid-cols-1 pb-8 text-center">
           <h6 className="mb-2 text-base font-medium uppercase text-primary-600">
-            <Trans>FAQ.section</Trans>
+            <Trans>SECTION.FAQ</Trans>
           </h6>
           <h3 className="mb-4 text-xl font-medium dark:text-white md:text-2xl">
             <Trans>FAQ.title</Trans>

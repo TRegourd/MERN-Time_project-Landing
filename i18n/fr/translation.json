@@ -19,47 +19,8 @@
     "phone": "Téléphone",
     "name": "Votre Nom",
     "message": "Votre Message",
-    "section": "Contact",
     "title": "Nous contacter",
     "subtitle": "Une question ? Un projet ? N'hesitez pas à nous contacter !"
-  },
-
-  "TESTIMONIALS": {
-    "section": "Avis",
-    "title": "Avis Utilisateurs",
-    "subtitle": "Ce que nos utilisateurs disent de nous.",
-    "testimonials": [
-      {
-        "name": "John Doe",
-        "position": "Doctor",
-        "text": "Lorem ipsum dolor sit amet, consectet",
-        "avatar": "john-doe"
-      },
-      {
-        "name": "Fred Foo",
-        "position": "Doctor",
-        "text": "Lorem ipsum dolor sit amet, consectet",
-        "avatar": "fred-foo"
-      },
-      {
-        "name": "Jane Doe",
-        "position": "Doctor",
-        "text": "Lorem ipsum dolor sit amet, consectet",
-        "avatar": "jane-doe"
-      },
-      {
-        "name": "Paul Smith",
-        "position": "Doctor",
-        "text": "Lorem ipsum dolor sit amet, consectet",
-        "avatar": "paul-smith"
-      }
-    ]
-  },
-
-  "FAQ": {
-    "section": "FAQ",
-    "title": "Foire aux questions",
-    "subtitle": "Cette section devrait pouvoir vous aider, si non : contactez nous ! !"
   },
 
   "SECTION": {
