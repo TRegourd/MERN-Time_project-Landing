@@ -31,6 +31,10 @@ export default function index({ data }: any) {
   const testimonials_subtitle = data.testimonials?.frontmatter.subtitle;
   const testimonials_list = data.testimonials?.frontmatter.testimonials;
 
+  const process_title = data.process?.frontmatter.title;
+  const process_subtitle = data.process?.frontmatter.subtitle;
+  const process_steps = data.process?.frontmatter.steps;
+
   const seo = {};
 
   const header_image = data.staticImg?.nodes.find((el: any) => {
@@ -60,9 +64,17 @@ export default function index({ data }: any) {
           subtitle={features_subtitle}
           features={features_list}
         />
-        <IndexProcess />
+        <IndexProcess
+          title={process_title}
+          subtitle={process_subtitle}
+          steps={process_steps}
+        />
       </section>
-      <IndexTestimonials list={testimonialsList} />
+      <IndexTestimonials
+        title={testimonials_title}
+        subtitle={testimonials_subtitle}
+        list={testimonialsList}
+      />
       <IndexFAQ />
       <IndexContact
         title={contact_title}
@@ -124,6 +136,22 @@ export const query = graphql`
           name
           position
           text
+        }
+      }
+    }
+    process: markdownRemark(
+      fields: { slug: { glob: "/*/process" } }
+      frontmatter: { lang: { eq: $language } }
+    ) {
+      id
+      frontmatter {
+        title
+        subtitle
+        steps {
+          image
+          name
+          position
+          description
         }
       }
     }

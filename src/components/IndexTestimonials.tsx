@@ -4,7 +4,15 @@ import Slider from "react-slick";
 import { ITestimonial } from "../libs/interfaces";
 import IndexTestimonialCard from "./IndexTestimonialCard";
 
-function IndexTestimonials({ list }: { list: ITestimonial[] }) {
+function IndexTestimonials({
+  list,
+  title,
+  subtitle,
+}: {
+  list: ITestimonial[];
+  title: string;
+  subtitle: string;
+}) {
   const settings = {
     dots: true,
     arrows: true,
@@ -52,11 +60,11 @@ function IndexTestimonials({ list }: { list: ITestimonial[] }) {
             <Trans>SECTION.testimonials</Trans>
           </h6>
           <h3 className="mb-4 text-xl font-medium dark:text-white md:text-2xl">
-            <Trans>TESTIMONIALS.title</Trans>
+            {title}
           </h3>
 
           <p className="mx-auto max-w-xl text-slate-400 dark:text-slate-300">
-            <Trans>TESTIMONIALS.subtitle</Trans>
+            {subtitle}
           </p>
         </div>
 

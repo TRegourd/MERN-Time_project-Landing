@@ -140,19 +140,19 @@ function Navbar() {
           <ul className="navbar-nav" id="navbar-navlist">
             <li className="nav-item">
               <a className="nav-link" href="#features">
-                About
+                <Trans>NAV.about</Trans>
               </a>
             </li>
 
             <li className="nav-item">
               <a className="nav-link" href="#faq">
-                FAQ
+                <Trans>NAV.FAQ</Trans>
               </a>
             </li>
 
             <li className="nav-item">
               <a className="nav-link" href="#contact">
-                Contact us
+                <Trans>NAV.contact</Trans>
               </a>
             </li>
           </ul>
