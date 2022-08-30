@@ -20,6 +20,13 @@ export interface IFeature {
   image: string;
 }
 
+export interface IProcessStep {
+  name: string;
+  description: string;
+  image: string;
+  position: string;
+}
+
 export interface ITestimonial {
   name: string;
   image: string;
