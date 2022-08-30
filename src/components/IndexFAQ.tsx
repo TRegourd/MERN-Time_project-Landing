@@ -26,30 +26,17 @@ function IndexFAQ() {
         </div>
         <div className="grid grid-cols-1 gap-[30px] dark:text-white md:grid-cols-12">
           <div className="md:col-span-5 lg:col-span-4">
-            <div className="sticky top-20 rounded-md p-6 shadow dark:shadow-gray-700">
+            <div className="sticky top-32 rounded-md p-6 shadow dark:shadow-gray-700">
               <ul
                 className="list-unstyled sidebar-nav mb-0 py-0"
                 id="navmenu-nav"
               >
-                <li className="navbar-item p-0">
-                  <a href="#tech" className="navbar-link text-base font-medium">
-                    Buying Questions
-                  </a>
-                </li>
                 <li className="navbar-item mt-3 p-0">
                   <a
                     href="#general"
                     className="navbar-link text-base font-medium"
                   >
                     General Questions
-                  </a>
-                </li>
-                <li className="navbar-item mt-3 p-0">
-                  <a
-                    href="#payment"
-                    className="navbar-link text-base font-medium"
-                  >
-                    Payments Questions
                   </a>
                 </li>
                 <li className="navbar-item mt-3 p-0">
@@ -65,8 +52,10 @@ function IndexFAQ() {
           </div>
           <div className="md:col-span-7 lg:col-span-8">
             <Accordion allowZeroExpanded>
-              <div id="tech">
-                <h5 className="my-2 text-2xl font-semibold">Buying Product</h5>
+              <div id="general">
+                <h5 className="my-2 text-2xl font-semibold">
+                  General Questions
+                </h5>
                 <AccordionItem className="relative overflow-hidden rounded-md shadow dark:shadow-gray-700">
                   <AccordionItemHeading>
                     <AccordionItemButton>
@@ -258,9 +247,9 @@ function IndexFAQ() {
               </div>
             </Accordion>
             <Accordion allowZeroExpanded>
-              <div id="general">
+              <div id="support">
                 <h5 className="my-2 text-2xl font-semibold">
-                  General Questions
+                  Support Questions
                 </h5>
                 <AccordionItem className="relative overflow-hidden rounded-md shadow dark:shadow-gray-700">
                   <AccordionItemHeading>

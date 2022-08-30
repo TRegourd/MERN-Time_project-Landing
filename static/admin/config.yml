@@ -4,6 +4,7 @@ backend:
   branch: master
 media_folder: static/assets
 public_folder: /assets
+publish_mode: editorial_workflow
 collections:
   - label: "Page Content English"
     name: "en"
