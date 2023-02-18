@@ -61,13 +61,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
-        url: `https://rssbox.herokuapp.com/twitter/1544238796543238144/TRegourd?include_rts=0&exclude_replies=1`,
-        name: `TwitterRss`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
