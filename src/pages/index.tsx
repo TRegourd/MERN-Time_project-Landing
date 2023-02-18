@@ -6,14 +6,10 @@ import IndexHero from "../components/IndexHero";
 import IndexTestimonials from "../components/IndexTestimonials";
 import IndexContact from "../components/IndexContact";
 import IndexProcess from "../components/IndexProcess";
-import { useTranslation } from "react-i18next";
-import { ITestimonial } from "../libs/interfaces";
 import IndexFAQ from "../components/IndexFAQ";
 import IndexFeatures from "../components/IndexFeatures";
 
 export default function index({ data }: any) {
-  const { t } = useTranslation();
-
   const header_title = data.header?.frontmatter.title;
   const header_subtitle = data.header?.frontmatter.subtitle;
   const header_img = data.header?.frontmatter.header_img;
